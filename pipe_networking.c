@@ -24,7 +24,7 @@ int server_handshake(int *to_client) {
   write(fd, "Request was confirmed", 22);
   char final[26];
   read(request, final, 26);
-  printf("[Server]: %s\n", final);
+  printf("[SERVER]: %s\n", final);
   return request;
 }
 
